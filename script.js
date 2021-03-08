@@ -31,3 +31,11 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+// generate password function
+
+function generatePassword() {
+  passwordLength = prompt("Choose a password between 8 and 128 characters!")
+}
+generatePassword()

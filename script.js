@@ -38,10 +38,16 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   passwordLength = prompt("Choose a password between 8 and 128 characters!")
 
-  while (!passwordLength) {
-    alert("CANNOT BE LEFT EMPTY!")
-  } if (passwordLength < 8 || passwordLength > 128) {
+  if (!passwordLength) {
+    prompt("CANNOT BE LEFT EMPTY!")
+  } else if (passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt("ENTER PASSWORD BETWEEN 8 AND 128!!!")
+  }
+  else {
+    confrimLower = confirm("Should password contain lowercase letters?")
+    confirmUpper = confirm("Should password contain uppercase letters?")
+    confrimSymbol = confirm("Should password contain special characters?")
+    confrimNumber = confirm("Should password contain numbers?")
   }
 }
 generatePassword()

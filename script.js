@@ -39,7 +39,7 @@ function generatePassword() {
   passwordLength = prompt("Choose a password between 8 and 128 characters!")
 
   if (!passwordLength) {
-    prompt("CANNOT BE LEFT EMPTY!")
+    alert("CANNOT BE LEFT EMPTY!")
   } else if (passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt("ENTER PASSWORD BETWEEN 8 AND 128!!!")
   }
@@ -49,5 +49,16 @@ function generatePassword() {
     confrimSymbol = confirm("Should password contain special characters?")
     confrimNumber = confirm("Should password contain numbers?")
   }
+
+
+  // if user says ok to all prompts
+  if (confrimLower && confirmUpper && confrimSymbol && confrimNumber) {
+    pInput = lower.concat(upper, symbol, number)
+  }
+  else if (!confrimLower && !confirmUpper && !confrimSymbol && !confrimNumber) {
+    pInput = alert("PLEASE CHOOSE AN OPTION")
+  }
 }
+
+
 generatePassword()

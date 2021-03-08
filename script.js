@@ -37,5 +37,11 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   passwordLength = prompt("Choose a password between 8 and 128 characters!")
+
+  while (!passwordLength) {
+    alert("CANNOT BE LEFT EMPTY!")
+  } if (passwordLength < 8 || passwordLength > 128) {
+    passwordLength = prompt("ENTER PASSWORD BETWEEN 8 AND 128!!!")
+  }
 }
 generatePassword()

@@ -51,14 +51,58 @@ function generatePassword() {
   }
 
 
-  // if user says ok to all prompts
+  // user inputs with concat method based on what they put
   if (confrimLower && confirmUpper && confrimSymbol && confrimNumber) {
     pInput = lower.concat(upper, symbol, number)
   }
   else if (!confrimLower && !confirmUpper && !confrimSymbol && !confrimNumber) {
     pInput = alert("PLEASE CHOOSE AN OPTION")
   }
+  else if (confirmLower && confrimUpper && confrimNumber) {
+    pInput = lower.concat(upper, number)
+  }
+  else if (confrimLower && confrimUpper && confrimSymbol) {
+    pInput = lower.concat(upper, symbol)
+  }
+  else if (confrimLower && confrimNumber && confrimSymbol) {
+    pInput = lower.concat(number, symbol)
+  }
+  else if (confrimUpper && confrimNumber && confrimSymbol) {
+    pInput = upper.concat(number, symbol)
+  }
+  else if (confrimLower && confrimUpper) {
+    pInput = lower.concat(upper)
+  }
+  else if (confrimLower && confrimNumber) {
+    pInput = lower.concat(number)
+  }
+  else if (confrimLower && confrimSymbol) {
+    pInput = lower.concat(symbol)
+  }
+  else if (confrimUpper && confrimNumber) {
+    pInput = upper.concat(number)
+  }
+  else if (confrimUpper && confrimSymbol) {
+    pInput = upper.concat(symbol)
+  }
+  else if (confrimSymbol && confrimNumber) {
+    pInput = symbol.concat(number)
+  }
+  else if (confirmLower) {
+    pInput = lower
+  }
+  else if (confirmUpper) {
+    pInput = upper
+  }
+  else if (confrimSymbol) {
+    pInput = symbol
+  }
+  else if (confirmNumber) {
+    pInput = number
+  }
 }
+
+
 
 
 generatePassword()

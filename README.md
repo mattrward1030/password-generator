@@ -2,7 +2,7 @@
 
 ## Description 
 
-The goal of this project was to create a random password generator that would generate a password between 8 and 128 characters. The generator would be given different parameters from a defined array of lowercase letters, uppercase letters, numbers, and symbols. The user can choose which of these options they want their password to include as long as one option is selected, as well as a given length fits the criteria. This is accomplished by using prompt windows and having the users make the selections which are then stored and randomized.
+The goal of this project was to create a random password generator that would generate a password between 8 and 128 characters. The generator would be given different parameters from a defined array of lowercase letters, uppercase letters, numbers, and symbols. The user can choose which of these options they want their password to include as long as one option is selected, as well as the given length fits the criteria. This is accomplished by using prompt windows and having the users make the selections which are then stored and randomized.
 
 ## Installation 
 
@@ -41,7 +41,7 @@ My page is live on github!
 <li>This application is comprised of three main files, an HTML, CSS, and JavaScript file.</li>
 <li>The HTML file gives the page strcuture and lays out the elements that make up the passsword text-box as well as the generate password button.</li>
 <li>The CSS file gives the page style, style is applied to every element on the page including the headers, the text box having a border, the style of the generate password button and giving the page responsiveness for different screen sizes.</li>
-<li>The JavaScript for this apploication contained many elements including functions that could be called when the generate password button was clicked. To recognize the password button being clicked we ha to use DOM events such as addEventListener() so certain script could be run when the button was clicked. The main function of the script conatined many JavaScript properties including prompts, alerts, confirm methods, if statements and for loops.</li>
+<li>The JavaScript for this apploication contained many elements including functions that could be called when the generate password button was clicked. To recognize the password button being clicked I had to use DOM events such as addEventListener() so certain script could be run when the button was clicked. The main function of the script conatined many JavaScript properties including prompts, alerts, confirm methods, if statements and for loops.</li>
 </ul>
 
 ## Tests

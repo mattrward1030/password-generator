@@ -109,6 +109,10 @@ function generatePassword() {
     let userInput = pInput[Math.floor(Math.random() * pInput.length)]
     password.push(userInput)
   }
+
+  var pw = password.join("");
+  Input(pw);
+  return pw;
 }
 
 

@@ -115,6 +115,10 @@ function generatePassword() {
   return pw;
 }
 
+function Input(pw) {
+  document.getElementById("password").textContent = pw;
+
+}
 
 
 

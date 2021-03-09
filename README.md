@@ -12,6 +12,23 @@ To install this repo on your local drive you would have to clone the ssh key fro
 
 My page is live on github!
 
+ https://mattrward1030.github.io/password-generator/
+
+ ### Application as shown as it loads on the users screen
+
+ <img src="./assets/images/application.png" alt="application start screen">
+
+ ### First prompt shown to user to pick character length 
+
+ <img src="./assets/images/passwordLength.png" alt="password length prompt">
+
+### One of the 4 prompts shown to pick options
+
+ <img src="./assets/images/option-prompt.png" alt="option prompt">
+
+ ### Password generated in text-box area
+
+ <img src="./assets/images/final-capture.png" alt="password generated">
 
 ## Features
 <ul>
